@@ -107,5 +107,6 @@ def evaluate_guess(player_guess, secret_number) -> tuple:
                 cows += 1
     return bulls, cows
 
-greet_player()
-next_round(0, generate_secret_number())
+if __name__ == "__main__":
+    greet_player()
+    next_round(0, generate_secret_number())
